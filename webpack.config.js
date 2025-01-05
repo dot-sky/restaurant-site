@@ -1,3 +1,4 @@
+const { watch } = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 module.exports = {
@@ -13,6 +14,10 @@ module.exports = {
       template: "./src/template.html",
     }),
   ],
+  devtool: "eval-source-map",
+  devServer: {
+    watchFiles: ["./src/template.html"],
+  },
   module: {
     rules: [
       {
