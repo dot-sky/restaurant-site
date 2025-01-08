@@ -1,3 +1,95 @@
+:root {
+  --text: #3e3c3b;
+  --background: #edebea;
+  --background-light: #fefefe;
+  --primary: #dd9953;
+  --secondary: #303338;
+  --accent: #80c172;
+
+  --text-50: #f3f2f2;
+  --text-100: #e6e5e5;
+  --text-200: #cdcccb;
+  --text-300: #b4b2b1;
+  --text-400: #9b9897;
+  --text-500: #827f7d;
+  --text-600: #686564;
+  --text-700: #4e4c4b;
+  --text-800: #343332;
+  --text-900: #1a1919;
+  --text-950: #0d0d0c;
+
+  --background-50: #f3f2f1;
+  --background-100: #e8e5e3;
+  --background-200: #d0cbc8;
+  --background-300: #b9b0ac;
+  --background-400: #a19691;
+  --background-500: #8a7c75;
+  --background-600: #6e635e;
+  --background-700: #534a46;
+  --background-800: #37322f;
+  --background-900: #1c1917;
+  --background-950: #0e0c0c;
+
+  --primary-50: #fbf2ea;
+  --primary-100: #f7e6d4;
+  --primary-200: #eeccaa;
+  --primary-300: #e6b37f;
+  --primary-400: #dd9955;
+  --primary-500: #d5802a;
+  --primary-600: #aa6622;
+  --primary-700: #804c19;
+  --primary-800: #553311;
+  --primary-900: #2b1a08;
+  --primary-950: #150d04;
+
+  --secondary-50: #f1f2f3;
+  --secondary-100: #e3e5e8;
+  --secondary-200: #c8cbd0;
+  --secondary-300: #acb1b9;
+  --secondary-400: #9197a1;
+  --secondary-500: #757d8a;
+  --secondary-600: #5e646e;
+  --secondary-700: #464b53;
+  --secondary-800: #2f3237;
+  --secondary-900: #17191c;
+  --secondary-950: #0c0c0e;
+
+  --accent-50: #eff7ed;
+  --accent-100: #dfefdc;
+  --accent-200: #bfe0b8;
+  --accent-300: #a0d095;
+  --accent-400: #80c171;
+  --accent-500: #60b14e;
+  --accent-600: #4d8e3e;
+  --accent-700: #3a6a2f;
+  --accent-800: #26471f;
+  --accent-900: #132310;
+  --accent-950: #0a1208;
+
+  --space-1x: 8px;
+  --space-2x: 16px;
+  --space-3x: 24px;
+  --space-4x: 32px;
+  --space-5x: 40px;
+}
 body {
   background-color: #fcf0cc;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav {
+  height: 80px;
+  background-color: var(--background-light);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav button {
+  border: 0px;
+  background-color: inherit;
+  padding: var(--space-4x);
+  cursor: pointer;
 }

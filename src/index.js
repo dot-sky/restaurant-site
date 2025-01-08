@@ -1,5 +1,4 @@
 import "./styles.css";
-import { testVar } from "./module.js";
 import { createHomePage } from "./homePage.js";
 import { createMenuPage } from "./menuPage.js";
 import { createAboutPage } from "./aboutPage.js";
@@ -22,9 +21,6 @@ const pageController = (function () {
   };
 
   const switchContent = (content) => {
-    console.log("switch content");
-    console.log(content);
-
     contentContainer.textContent = "";
     contentContainer.appendChild(content);
   };
