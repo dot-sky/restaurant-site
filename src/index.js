@@ -29,4 +29,5 @@ const pageController = (function () {
     contentContainer.appendChild(content);
   };
   bindEvents();
+  switchContent(homePage);
 })();
