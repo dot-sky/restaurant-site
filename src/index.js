@@ -7,7 +7,7 @@ import pastryImg from "./assets/croissant_128.png";
 console.log(testVar);
 
 function createHomepage(doc) {
-  const content = document.querySelector("#main");
+  const content = document.querySelector("#content");
   const main = createHomepageElements(doc);
   content.appendChild(main);
   // fill
