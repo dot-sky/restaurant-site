@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:700|Inter:400");
 :root {
-  --text: #3e3c3b;
+  --text: #1c1b1b; /*#3e3c3b */
+  --text-light: #3e3c3b; /*#3e3c3b */
   --background: #edebea;
   --background-light: #fefefe;
   --primary: #dd9953;
@@ -72,24 +74,75 @@
   --space-4x: 32px;
   --space-5x: 40px;
 }
-body {
-  background-color: #fcf0cc;
-}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  background-color: #fcf0cc;
+  color: var(--text);
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
 nav {
   height: 80px;
   background-color: var(--background-light);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: var(--space-3x);
+  color: var(--text-light);
 }
+
 nav button {
-  border: 0px;
-  background-color: inherit;
   padding: var(--space-4x);
+}
+
+button {
+  border: 0px;
+  font-size: 100%;
+  background-color: inherit;
+  color: inherit;
   cursor: pointer;
 }
