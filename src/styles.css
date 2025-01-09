@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:700|Inter:400");
 :root {
   --text: #222222; /*#3e3c3b */
-  --text-light: #3e3c3b; /*#3e3c3b */
+  --text-light: #636261; /*#3e3c3b */
   --background: #edebea;
   --background-light: #fefefe;
   --primary: #dd9953;
@@ -73,6 +73,12 @@
   --space-3x: 24px;
   --space-4x: 32px;
   --space-5x: 40px;
+  --space-6x: 48px;
+  --space-7x: 56px;
+  --space-8x: 64px;
+  --space-10x: 80px;
+  --space-12x: 96px;
+  --space-14x: 112px;
 }
 
 * {
@@ -125,7 +131,6 @@ small {
 }
 
 nav {
-  height: 80px;
   background-color: var(--background-light);
   display: flex;
   justify-content: center;
