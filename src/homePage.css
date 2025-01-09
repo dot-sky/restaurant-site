@@ -32,7 +32,7 @@
   padding: var(--space-2x);
   display: flex;
   flex-direction: column;
-  gap: var(--space-3x);
+  gap: var(--space-4x);
   align-items: center;
 }
 .card-item img {
