@@ -2,7 +2,7 @@
 :root {
   --text: #222222; /*#3e3c3b */
   --text-light: #636261; /*#3e3c3b */
-  --background: #edebea;
+  --background: #f0efed; /*#edebea;*/
   --background-light: #fefefe;
   --primary: #dd9953;
   --secondary: #303338;
