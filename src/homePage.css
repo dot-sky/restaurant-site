@@ -20,13 +20,14 @@
   text-align: center;
 }
 .card-section {
-  margin: var(--space-12x) var(--space-4x);
+  padding: var(--space-12x) var(--space-4x);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: var(--space-4x);
 
   color: var(--text-light);
+  background-color: var(--background);
 }
 .card-item {
   padding: var(--space-2x);
