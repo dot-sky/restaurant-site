@@ -127,7 +127,8 @@ h5,
   font-size: 1.333rem; /* 21.28px */
 }
 
-small {
+small,
+.small {
   font-size: 0.75rem; /* 12px */
 }
 
@@ -166,8 +167,14 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  font-size: 14px;
+  padding: var(--space-2x);
 }
 a {
   color: var(--primary);
+}
+
+@media screen and (max-width: 399px) {
+  nav button {
+    padding: var(--space-4x) var(--space-2x);
+  }
 }

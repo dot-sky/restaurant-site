@@ -17,6 +17,7 @@
   align-items: center;
   gap: var(--space-4x);
   color: var(--background-light);
+  text-align: center;
 }
 .card-section {
   margin: var(--space-12x) var(--space-4x);
@@ -26,17 +27,23 @@
   gap: var(--space-4x);
 
   color: var(--text-light);
-  font-weight: bold;
 }
 .card-item {
   padding: var(--space-2x);
+  max-width: 250px;
+
   display: flex;
   flex-direction: column;
-  gap: var(--space-4x);
+  gap: var(--space-3x);
   align-items: center;
+
+  text-align: center;
 }
 .card-item img {
   width: 80px;
+}
+.card-item > p:nth-child(2) {
+  font-weight: bold;
 }
 
 .section-50 {
@@ -85,5 +92,16 @@
   }
   .section-50 > .map-container {
     margin: 0 0;
+  }
+}
+@media screen and (max-width: 399px) {
+  .hero-container h1 {
+    font-size: 2.369rem; /* 37.92px */
+  }
+  .section-50 {
+    margin: var(--space-8x) var(--space-2x);
+  }
+  .hours > ul {
+    font-size: 1rem;
   }
 }
