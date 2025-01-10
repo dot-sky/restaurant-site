@@ -83,4 +83,7 @@
   .section-50 > div > ul {
     margin: var(--space-4x) auto;
   }
+  .section-50 > .map-container {
+    margin: 0 0;
+  }
 }
