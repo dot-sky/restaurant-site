@@ -1,3 +1,4 @@
+import "./menuPage.css";
 export function createMenuPage(doc) {
   const main = createMenuElements(doc);
   return main;
