@@ -159,3 +159,15 @@ button {
   color: inherit;
   cursor: pointer;
 }
+
+footer {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+}
+a {
+  color: var(--primary);
+}
