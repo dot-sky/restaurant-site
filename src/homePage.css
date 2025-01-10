@@ -38,3 +38,49 @@
 .card-item img {
   width: 80px;
 }
+
+.section-50 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+  gap: var(--space-4x);
+  margin: var(--space-12x) var(--space-4x);
+  align-items: center;
+  /* Add rule to wrap */
+}
+.section-50 > div {
+  padding: var(--space-2x);
+}
+.img-hours-container {
+  display: flex;
+  justify-content: center;
+}
+.img-hours-container > img {
+  object-fit: contain;
+  max-width: min(100%, 700px);
+}
+.hours > * {
+  margin-bottom: var(--space-2x);
+}
+.hours > ul {
+  list-style: none;
+  max-width: 350px;
+  margin: var(--space-4x) 0;
+}
+.hours > ul > li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-1x);
+}
+.hours > ul > li > span:first-child {
+  font-weight: bold;
+}
+@media screen and (max-width: 1095px) {
+  .section-50 > div {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .section-50 > div > ul {
+    margin: var(--space-4x) auto;
+  }
+}
