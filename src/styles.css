@@ -140,7 +140,9 @@ small,
 .text-primary {
   color: var(--primary);
 }
-
+.bold {
+  font-weight: bold;
+}
 nav {
   background-color: var(--background-light);
   display: flex;

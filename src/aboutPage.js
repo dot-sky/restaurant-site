@@ -1,3 +1,4 @@
+import "./aboutPage.css";
 export function createAboutPage(doc) {
   const main = createAboutPageElements(doc);
   return main;
