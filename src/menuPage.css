@@ -23,6 +23,7 @@
   background-color: var(--background);
   display: flex;
   justify-content: space-evenly;
+  gap: var(--space-4x);
   flex-wrap: wrap;
   font-weight: bold;
   background-color: var(--background-secondary);
@@ -44,7 +45,6 @@
 .cols-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* justify-content: center; */
 }
 .cols-container > .menu-col:first-child {
   border-right: var(--primary-200) 2px dashed;
@@ -62,4 +62,32 @@
 .menu-item-price {
   text-align: right;
   font-weight: bold;
+}
+@media screen and (max-width: 799px) {
+  .menu-box .menu-content {
+    padding: var(--space-4x);
+  }
+}
+@media screen and (max-width: 599px) {
+  .menu-box .menu-content {
+    padding: var(--space-4x);
+  }
+  .cols-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cols-container > .menu-col:first-child {
+    border-right: none;
+  }
+  .type-section {
+    font-size: 0.75rem;
+  }
+  .type-section img {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .menu-item {
+    padding: var(--space-2x) var(--space-1x);
+  }
 }
