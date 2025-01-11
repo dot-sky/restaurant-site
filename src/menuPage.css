@@ -1,8 +1,65 @@
 .menu-container {
   background-color: var(--secondary);
-  padding: var(--space-4x);
+  padding: var(--space-4x) var(--space-4x) var(--space-12x);
+}
+.text-container {
+  margin: var(--space-5x) 0;
+  padding: var(--space-2x);
+  text-align: center;
+  color: var(--background-light);
+}
+.text-container > h2 {
+  margin-bottom: var(--space-2x);
 }
 .menu-box {
-  padding: var(--space-2x);
+  margin: 0 auto;
+  max-width: 1000px;
   background-color: var(--background-light);
+}
+.menu-box > div {
+  padding: var(--space-8x) var(--space-2x);
+}
+.type-section {
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-weight: bold;
+  background-color: var(--background-secondary);
+  color: var(--background-light);
+  text-align: center;
+}
+.type-section img {
+  margin-bottom: var(--space-2x);
+  height: 64px;
+}
+.menu-box .menu-content {
+  color: var(--text-light);
+  padding: var(--space-6x) var(--space-10x) var(--space-10x);
+}
+.menu-content > h3 {
+  text-align: center;
+  margin: var(--space-2x) var(--space-2x) var(--space-8x);
+}
+.cols-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center; */
+}
+.cols-container > .menu-col:first-child {
+  border-right: var(--primary-200) 2px dashed;
+}
+.menu-item {
+  padding: var(--space-2x) var(--space-4x);
+}
+.menu-item > h5,
+.menu-item-price {
+  color: var(--primary);
+}
+.menu-item > * {
+  margin-bottom: var(--space-2x);
+}
+.menu-item-price {
+  text-align: right;
+  font-weight: bold;
 }
