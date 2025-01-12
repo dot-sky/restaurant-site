@@ -19,6 +19,7 @@ export function createHomePage(doc) {
 
   return mainContainer;
 }
+
 function getDataObjects() {
   const cardItems = [
     {
@@ -78,7 +79,7 @@ function getDataObjects() {
   };
   return { cardItems, days, map };
 }
-function createHomepageElements(doc) {}
+
 function createHeroSection(doc) {
   const heroContainer = doc.createElement("div");
   const heroTitle = doc.createElement("h1");
@@ -93,6 +94,7 @@ function createHeroSection(doc) {
   heroContainer.appendChild(heroDesc);
   return heroContainer;
 }
+
 function createCardsSection(doc, cards) {
   const cardSection = doc.createElement("div");
   cardSection.classList.add("card-section");
@@ -117,6 +119,7 @@ function createCardsSection(doc, cards) {
   }
   return cardSection;
 }
+
 function createHoursSection(doc, daysObj) {
   const hoursSection = doc.createElement("div");
   const imgWrapper = doc.createElement("div");
