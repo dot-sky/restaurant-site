@@ -7,3 +7,6 @@
 .about-us > p {
   color: var(--text-light);
 }
+.about-container > .section-50 {
+  margin: var(--space-6x) var(--space-4x);
+}
