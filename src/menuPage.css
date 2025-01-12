@@ -19,7 +19,7 @@
 .menu-box > div {
   padding: var(--space-8x) var(--space-2x);
 }
-.type-section {
+.category-section {
   background-color: var(--background);
   display: flex;
   justify-content: space-evenly;
@@ -30,7 +30,7 @@
   color: var(--background-light);
   text-align: center;
 }
-.type-section img {
+.category-section img {
   margin-bottom: var(--space-2x);
   height: 64px;
 }
