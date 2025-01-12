@@ -2,17 +2,17 @@ import "./styles.css";
 import { createHomePage } from "./homePage.js";
 import { createMenuPage } from "./menuPage.js";
 import { createAboutPage } from "./aboutPage.js";
-const pageController = (function () {
+const pageController = (function (doc) {
   // DOM selection
-  const homeBtn = document.querySelector("button#home-btn");
-  const menuBtn = document.querySelector("button#menu-btn");
-  const aboutBtn = document.querySelector("button#about-btn");
-  const contentContainer = document.querySelector("div#content");
+  const homeBtn = doc.querySelector("button#home-btn");
+  const menuBtn = doc.querySelector("button#menu-btn");
+  const aboutBtn = doc.querySelector("button#about-btn");
+  const contentContainer = doc.querySelector("div#content");
 
   // pages creation
-  const homePage = createHomePage();
-  const menuPage = createMenuPage();
-  const aboutPage = createAboutPage();
+  const homePage = createHomePage(doc);
+  const menuPage = createMenuPage(doc);
+  const aboutPage = createAboutPage(doc);
 
   const bindEvents = () => {
     homeBtn.addEventListener("click", () => switchContent(homePage));
@@ -25,5 +25,5 @@ const pageController = (function () {
     contentContainer.appendChild(content);
   };
   bindEvents();
-  // switchContent(homePage);
-})();
+  switchContent(homePage);
+})(document);
