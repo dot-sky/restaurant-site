@@ -65,7 +65,8 @@
   object-fit: contain;
   max-width: min(100%, 700px);
 }
-.hours > * {
+.hours > *,
+.map-text > * {
   margin-bottom: var(--space-2x);
 }
 .hours > ul {
@@ -81,6 +82,9 @@
 }
 .hours > ul > li > span:first-child {
   font-weight: bold;
+}
+.map-text {
+  max-width: 500px;
 }
 @media screen and (max-width: 1095px) {
   .section-50 > div {
