@@ -15,9 +15,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--space-4x);
+  gap: var(--space-1x);
   color: var(--background-light);
   text-align: center;
+}
+.hero-container > h1 {
+  margin-bottom: var(--space-1x);
 }
 .card-section {
   padding: var(--space-12x) var(--space-4x);
