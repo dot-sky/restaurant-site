@@ -17,12 +17,12 @@
   background-color: var(--background-light);
 }
 .menu-box > div {
-  padding: var(--space-8x) var(--space-2x);
+  padding: var(--space-8x) var(--space-10x);
 }
 .category-section {
   background-color: var(--background);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: var(--space-4x);
   flex-wrap: wrap;
   font-weight: bold;
@@ -65,6 +65,9 @@
 }
 @media screen and (max-width: 799px) {
   .menu-box .menu-content {
+    padding: var(--space-4x);
+  }
+  .menu-box > div {
     padding: var(--space-4x);
   }
 }
