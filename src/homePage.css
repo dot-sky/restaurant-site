@@ -7,7 +7,7 @@
       rgba(0, 0, 0, 0.1) 0%,
       rgba(0, 0, 0, 0.77) 100%
     ),
-    url("./assets/hero-bg.jpg");
+    url("./assets/img/hero-bg.jpg");
   background-size: cover;
   background-position: bottom;
 

@@ -1,4 +1,4 @@
-import tablePlate from "./assets/table-plate.jpg";
+import tablePlate from "./assets/img/table-plate.jpg";
 import "./aboutPage.css";
 
 export function createAboutPage(doc) {

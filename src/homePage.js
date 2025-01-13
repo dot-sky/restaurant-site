@@ -1,7 +1,7 @@
-import lunchImg from "./assets/tableware_128.png";
-import breakfastImg from "./assets/tea_128.png";
-import pastryImg from "./assets/croissant_128.png";
-import plate from "./assets/plate.jpg";
+import lunchImg from "./assets/icons/tableware.png";
+import breakfastImg from "./assets/icons/tea.png";
+import pastryImg from "./assets/icons/croissant.png";
+import plate from "./assets/img/plate.jpg";
 import logoImg from "./assets/icons/chef-hat.png";
 import "./homePage.css";
 export function createHomePage(doc) {
