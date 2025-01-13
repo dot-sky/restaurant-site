@@ -87,7 +87,7 @@ function createHeroSection(doc) {
   const heroTitle = doc.createElement("h1");
   const heroDesc = doc.createElement("p");
 
-  heroTitle.textContent = "VitaliciouS";
+  heroTitle.textContent = "Vitalicious";
   heroDesc.textContent = "Your place for healthy and delicious food!";
   logo.setAttribute("src", logoImg);
 

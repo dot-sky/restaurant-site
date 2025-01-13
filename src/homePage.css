@@ -21,6 +21,8 @@
 }
 .hero-container > h1 {
   margin-bottom: var(--space-1x);
+  text-transform: uppercase;
+  font-size: 3.158rem;
 }
 .card-section {
   padding: var(--space-12x) var(--space-4x);
