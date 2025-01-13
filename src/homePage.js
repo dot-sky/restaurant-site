@@ -24,8 +24,8 @@ export function createHomePage(doc) {
 function getDataObjects() {
   const cardItems = [
     {
-      title: "Breakfast",
-      desc: "Feel-good mornings start here.",
+      title: "Lunch",
+      desc: "Healthy, tasty, and made for your busy day.",
       img: lunchImg,
     },
     {
@@ -34,8 +34,8 @@ function getDataObjects() {
       img: breakfastImg,
     },
     {
-      title: "Breakfast",
-      desc: "Feel-good mornings start here.",
+      title: "Pastry",
+      desc: "Little bites of happiness, done right.",
       img: pastryImg,
     },
   ];
