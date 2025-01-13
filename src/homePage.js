@@ -2,6 +2,7 @@ import lunchImg from "./assets/tableware_128.png";
 import breakfastImg from "./assets/tea_128.png";
 import pastryImg from "./assets/croissant_128.png";
 import plate from "./assets/plate.jpg";
+import logoImg from "./assets/icons/chef-hat.png";
 import "./homePage.css";
 export function createHomePage(doc) {
   const mainContainer = doc.createElement("div");
@@ -82,14 +83,18 @@ function getDataObjects() {
 
 function createHeroSection(doc) {
   const heroContainer = doc.createElement("div");
+  const logo = doc.createElement("img");
   const heroTitle = doc.createElement("h1");
   const heroDesc = doc.createElement("p");
 
-  heroTitle.textContent = "Vitalicious";
+  heroTitle.textContent = "VitaliciouS";
   heroDesc.textContent = "Your place for healthy and delicious food!";
+  logo.setAttribute("src", logoImg);
 
   heroContainer.classList.add("hero-container");
+  logo.classList.add("hero-logo");
 
+  heroContainer.appendChild(logo);
   heroContainer.appendChild(heroTitle);
   heroContainer.appendChild(heroDesc);
   return heroContainer;
